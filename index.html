@@ -6,7 +6,6 @@
   <title>ATPanels – Daily Passive Earnings</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
-  <!-- QR Code generator library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
   <script>
@@ -52,7 +51,7 @@
 </head>
 <body class="animated-bg text-at-text min-h-screen font-sans antialiased relative">
 
-  <!-- Particles Background -->
+  <!-- Particles -->
   <div id="tsparticles" class="absolute inset-0 pointer-events-none z-0"></div>
   <script>
     tsParticles.load("tsparticles", {
@@ -70,33 +69,35 @@
     <div class="container mx-auto px-6 py-20 md:py-28 text-center relative">
       <img src="https://image2url.com/r2/default/images/1770612070917-b4d706af-f29f-497c-90c6-0dbdfc3f20d2.png" alt="ATPanels Logo" class="mx-auto h-20 md:h-28 mb-6 drop-shadow-[0_0_20px_#00f0ff90]">
       <h1 class="text-5xl md:text-7xl font-extrabold mb-6 animate-glow tracking-tight">ATPanels</h1>
-      <p class="text-2xl md:text-4xl font-semibold text-at-neon-cyan mb-8 drop-shadow-md">Earn ₹299 – ₹1,699 Daily – Passive Income</p>
+      <p class="text-2xl md:text-4xl font-semibold text-at-neon-cyan mb-8 drop-shadow-md">Earn ₹99 – ₹1,699 Daily – Passive Income</p>
       <p class="text-lg md:text-2xl text-at-muted max-w-3xl mx-auto mb-12">One-time activation. Daily automatic earnings to your UPI wallet.</p>
       <a href="#plans" class="inline-block btn-gradient-hover text-black font-bold py-5 px-14 rounded-full text-xl shadow-2xl hover:shadow-[0_0_60px_#ff00aa] transition-all duration-400 transform hover:scale-105">Start Earning Now →</a>
     </div>
   </header>
 
-  <!-- Pricing Panels -->
+  <!-- Pricing Panels (now 4 cards) -->
   <section id="plans" class="py-16 md:py-24 relative z-10">
     <div class="container mx-auto px-6">
       <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 animate-glow">Select Your Panel</h2>
-      <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
- <!-- Starter -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-7xl mx-auto">
+
+        <!-- New Mini Panel -->
+        <div class="card-gradient bg-gradient-to-br from-[#0f172a] via-[#1e0a2e] to-[#0a0e17] backdrop-blur-lg border border-at-neon-cyan/30 rounded-3xl p-7 shadow-2xl hover:shadow-[0_0_50px_#00f0ff60] transition-all duration-500 transform hover:-translate-y-4">
+          <h3 class="text-3xl font-bold text-at-neon-cyan mb-3">Mini</h3>
+          <p class="text-5xl font-extrabold mb-1">₹29</p>
+          <p class="text-at-muted mb-5 text-sm">One-time</p>
+          <div class="text-4xl font-bold text-green-400 mb-6">₹99<span class="text-xl">/day</span></div>
+          <ul class="space-y-3 mb-8 text-sm md:text-base">
+            <li>✔ Daily auto credits</li>
+            <li>✔ Basic UPI withdrawal</li>
+            <li>✔ Standard support</li>
+          </ul>
+          <button data-amount="29" class="buy-btn w-full btn-gradient-hover text-black font-bold py-4 rounded-full text-base hover:shadow-[0_0_40px_#00f0ff] transition cursor-pointer">Buy Mini – ₹29</button>
+        </div>
+
+        <!-- Starter -->
         <div class="card-gradient bg-gradient-to-br from-[#0f172a] via-[#1e0a2e] to-[#0a0e17] backdrop-blur-lg border border-at-neon-cyan/30 rounded-3xl p-8 shadow-2xl hover:shadow-[0_0_60px_#00f0ff70] transition-all duration-500 transform hover:-translate-y-5">
           <h3 class="text-3xl md:text-4xl font-bold text-at-neon-cyan mb-4">Starter</h3>
-          <p class="text-6xl font-extrabold mb-1">₹29</p>
-          <p class="text-at-muted mb-6">One-time</p>
-          <div class="text-5xl font-bold text-green-400 mb-8">₹29<span class="text-2xl">/day</span></div>
-          <ul class="space-y-4 mb-10 text-base md:text-lg">
-            <li>✔ Daily auto credits</li>
-            <li>✔ Fast UPI withdrawal</li>
-            <li>✔ Full support</li>
-          </ul>
-          <button data-amount="99" class="buy-btn w-full btn-gradient-hover text-black font-bold py-5 rounded-full text-lg hover:shadow-[0_0_50px_#00f0ff] transition cursor-pointer">Buy Starter – ₹99</button>
-        </div>
-        <!-- levelup -->
-        <div class="card-gradient bg-gradient-to-br from-[#0f172a] via-[#1e0a2e] to-[#0a0e17] backdrop-blur-lg border border-at-neon-cyan/30 rounded-3xl p-8 shadow-2xl hover:shadow-[0_0_60px_#00f0ff70] transition-all duration-500 transform hover:-translate-y-5">
-          <h3 class="text-3xl md:text-4xl font-bold text-at-neon-cyan mb-4">levelup</h3>
           <p class="text-6xl font-extrabold mb-1">₹99</p>
           <p class="text-at-muted mb-6">One-time</p>
           <div class="text-5xl font-bold text-green-400 mb-8">₹299<span class="text-2xl">/day</span></div>
@@ -108,7 +109,7 @@
           <button data-amount="99" class="buy-btn w-full btn-gradient-hover text-black font-bold py-5 rounded-full text-lg hover:shadow-[0_0_50px_#00f0ff] transition cursor-pointer">Buy Starter – ₹99</button>
         </div>
 
-        <!-- Pro -->
+        <!-- Pro (highlighted) -->
         <div class="card-gradient bg-gradient-to-br from-[#2a0f1e] via-[#1e0a2e] to-[#0f172a] border-2 border-at-neon-pink/50 rounded-3xl p-9 md:p-10 shadow-2xl transform scale-105 hover:shadow-[0_0_90px_#ff00aa90] transition-all duration-600 relative z-10">
           <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-at-neon-pink to-at-neon-cyan text-black px-8 py-2.5 rounded-full font-bold text-base md:text-lg shadow-md">Most Popular</div>
           <h3 class="text-3xl md:text-4xl font-bold text-at-neon-pink mb-4">Pro</h3>
@@ -136,6 +137,7 @@
           </ul>
           <button data-amount="499" class="buy-btn w-full btn-gradient-hover text-black font-bold py-5 rounded-full text-lg hover:shadow-[0_0_50px_#00f0ff] transition cursor-pointer">Go Elite – ₹499</button>
         </div>
+
       </div>
     </div>
   </section>
@@ -144,9 +146,8 @@
   <div id="paymentModal" class="fixed inset-0 bg-black/90 flex items-center justify-center z-50 hidden">
     <div class="bg-gradient-to-br from-[#111827] to-[#0a0e17] rounded-2xl p-8 max-w-sm w-11/12 text-center border border-at-neon-cyan/40 shadow-2xl relative">
       <h3 class="text-2xl font-bold text-at-neon-cyan mb-6">Complete Your Payment</h3>
-      <p class="mb-4 text-lg">Send <strong id="amountDisplay" class="text-at-neon-pink">₹99</strong> to the UPI below</p>
+      <p class="mb-4 text-lg">Send <strong id="amountDisplay" class="text-at-neon-pink">₹29</strong> to the UPI below</p>
 
-      <!-- QR generated here -->
       <div id="qrContainer" class="mx-auto mb-6 bg-white p-4 rounded-xl inline-block shadow-lg" style="width: 260px; height: 260px;"></div>
 
       <div id="expiredOverlay" class="absolute inset-0 bg-black/60 flex items-center justify-center rounded-xl hidden pointer-events-none" style="top: 50%; left: 50%; transform: translate(-50%, -50%); width: 260px; height: 260px;">
@@ -164,7 +165,7 @@
   <div id="notCompletedPopup" class="fixed inset-0 bg-black/85 flex items-center justify-center z-[9999] hidden overflow-y-auto">
     <div class="bg-[#111827] rounded-2xl p-8 w-full max-w-md mx-4 text-center border border-red-600/60 shadow-2xl my-auto">
       <h2 class="text-3xl font-bold text-red-400 mb-6">Payment Not Completed</h2>
-      <p class="text-lg mb-8 text-at-text">payment notcompleted.<br>.</p>
+      <p class="text-lg mb-8 text-at-text">We could not verify your payment.<br>Please try again or contact support if the issue persists.</p>
       <button onclick="document.getElementById('notCompletedPopup').classList.add('hidden')" class="bg-at-neon-cyan hover:bg-cyan-400 text-black font-bold py-4 px-12 rounded-full text-lg transition shadow-lg">OK</button>
     </div>
   </div>
@@ -174,17 +175,10 @@
   </footer>
 
   <script>
-    // ────────────────────────────────────────────────
-    // CHANGE YOUR UPI ID HERE (only this line)
-    // ────────────────────────────────────────────────
-    const MY_UPI_ID = "bestsmm@ptaxis";   // ←←← Replace this with your real UPI ID
-
-    // Optional: change payee name shown in UPI apps
+    // CHANGE YOUR UPI ID HERE
+    const MY_UPI_ID = "bestsmm@ptaxis";   // ← Replace with your real UPI ID
     const PAYEE_NAME = "ATPanels";
 
-    // ────────────────────────────────────────────────
-    // Modal + Dynamic QR Generation
-    // ────────────────────────────────────────────────
     const modal = document.getElementById('paymentModal');
     const amountDisplay = document.getElementById('amountDisplay');
     const qrContainer = document.getElementById('qrContainer');
@@ -195,20 +189,17 @@
 
     function openModal(amount) {
       if (!MY_UPI_ID || !MY_UPI_ID.includes('@')) {
-        alert('UPI ID not set correctly in the code. Please update MY_UPI_ID variable.');
+        alert('UPI ID not set correctly in the code.');
         return;
       }
 
       amountDisplay.textContent = `₹${amount}`;
 
-      // Clear old QR
       qrContainer.innerHTML = '';
       if (currentQr) currentQr.clear();
 
-      // Build UPI deep link
       const upiLink = `upi://pay?pa=${encodeURIComponent(MY_UPI_ID)}&pn=${encodeURIComponent(PAYEE_NAME)}&am=${amount}.00&cu=INR&tn=ATPanels ${amount} Panel`;
 
-      // Generate QR
       currentQr = new QRCode(qrContainer, {
         text: upiLink,
         width: 240,
@@ -218,7 +209,6 @@
         correctLevel: QRCode.CorrectLevel.H
       });
 
-      // Style the generated img
       const qrImg = qrContainer.querySelector('img');
       if (qrImg) qrImg.classList.add('rounded-xl');
 
@@ -269,6 +259,4 @@
   </script>
 
 </body>
-
 </html>
-
